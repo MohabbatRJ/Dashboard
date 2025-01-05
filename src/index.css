@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  @apply bg-white text-primary-600;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9f1239;
+  border-radius: 3px;
+}
+
+/* .apexcharts-tooltip .apexcharts-tooltip-title {
+  background-color: #f7f8f8 !important;
+  border-bottom: 1px solid #ddd !important;
+  color: #878a99 !important;
+}
+
+.apexcharts-tooltip * {
+  color: #878a99 !important;
+} */
+
+
+.flatpickr-calendar .flatpickr-months .flatpickr-month,
+.flatpickr-calendar .flatpickr-weekdays {
+  @apply bg-primary-500 !important;
+}
+.flatpickr-calendar .flatpickr-months .flatpickr-monthDropdown-months {
+  @apply text-sm font-semibold !important;
+}
+.flatpickr-calendar .flatpickr-weekdays .flatpickr-weekday {
+  @apply text-xs text-gray-100 font-bold !important;
+}
+
+.flatpickr-calendar .numInputWrapper .numInput.cur-year {
+  @apply text-sm font-bold !important;
+}
+
+.flatpickr-calendar .flatpickr-days .flatpickr-day {
+  @apply text-sm font-semibold leading-10 text-gray-800;
+}
+
+.flatpickr-calendar .flatpickr-day.inRange {
+  @apply bg-primary-300 border-primary-300 shadow-none text-gray-600 !important;
+}
+
+.flatpickr-calendar .flatpickr-day:hover {
+  @apply bg-primary-500 text-white !important;
+}
+
+.flatpickr-calendar .flatpickr-day.selected,
+.flatpickr-calendar .flatpickr-day.startRange,
+.flatpickr-calendar .flatpickr-day.endRange {
+  @apply bg-primary-700 text-white;
+}
+
+.flatpickr-calendar .flatpickr-prev-month:hover svg,
+.flatpickr-calendar .flatpickr-next-month:hover svg {
+  @apply fill-white !important;
+}
+
+@layer components {
+  .bg-btn-primary-700 {
+    @apply text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800;
+  }
+
+  .bg-btn-transparent {
+    @apply text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800;
+  }
+
+  .btn-open-menu {
+    @apply flex justify-center items-center p-2 text-sm text-gray-500 rounded-full hover:bg-primary-100 focus:outline-none focus:ring-0 focus:ring-primary-200 dark:text-primary-400 dark:hover:text-gray-100 dark:hover:bg-transparent dark:focus:ring-transparent w-[40px] h-[40px];
+    margin: auto !important
+  }
+
+  .red-dot-circle {
+    @apply absolute min-w-[10px] min-h-[10px] rounded-full py-1 px-1 text-xs font-medium content-[''] leading-none grid place-items-center translate-x-2/4 -translate-y-2/4 bg-red-500 text-white;
+  }
+}

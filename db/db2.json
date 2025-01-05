@@ -1,0 +1,1471 @@
+{
+    "sidebarMenu": {
+        "meta": {
+            "status": "success",
+            "code": 200,
+            "message": "Sidebar menu retrieved successfully",
+            "timestamp": "2024-08-31T14:00:00Z",
+            "requestId": "xyz789-abc123-def456",
+            "responseTimeMs": 100,
+            "apiVersion": "1.0",
+            "locale": "en-US"
+        },
+        "data": {
+            "type": "sidebarMenu",
+            "id": "sidebar_menu_2024-08-31",
+            "menuItems": [
+                {
+                    "id": "100",
+                    "menuName": "dashboard",
+                    "title": "Dashboard",
+                    "icon": "home",
+                    "url": "/dashboard"
+                },
+                {
+                    "id": "200",
+                    "menuName": "Products",
+                    "title": "Product",
+                    "icon": "box",
+                    "dropdownIcon": "angle-down",
+                    "url": "",
+                    "children": [
+                        {
+                            "id": 201,
+                            "title": "Physical",
+                            "menuName": "physicalProducts",
+                            "url": "/users/list",
+                            "icon": "people-carry-box",
+                            "dropdownIcon": "angle-down",
+                            "children": [
+                                {
+                                    "id": 202,
+                                    "title": "All Product",
+                                    "icon": "list",
+                                    "url": ""
+                                },
+                                {
+                                    "id": 203,
+                                    "title": "Create Products",
+                                    "icon": "plus",
+                                    "url": ""
+                                },
+                                {
+                                    "id": 204,
+                                    "title": "Product Detail",
+                                    "icon": "info-circle",
+                                    "url": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 205,
+                            "menuName": "digitalProducts",
+                            "title": "Digital",
+                            "icon": "box-open",
+                            "dropdownIcon": "angle-down",
+                            "url": "",
+                            "children": [
+                                {
+                                    "id": 206,
+                                    "title": "All Product",
+                                    "icon": "list",
+                                    "url": ""
+                                },
+                                {
+                                    "id": 207,
+                                    "title": "Create Products",
+                                    "icon": "plus",
+                                    "url": ""
+                                },
+                                {
+                                    "id": 208,
+                                    "title": "Product Detail",
+                                    "icon": "info-circle",
+                                    "url": ""
+                                }
+                            ]
+                        },
+                        {
+                            "id": 209,
+                            "menuName": "productReview",
+                            "title": "Product Reviews",
+                            "icon": "star",
+                            "url": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "300",
+                    "menuName": "category",
+                    "title": "Category",
+                    "icon": "tags",
+                    "dropdownIcon": "angle-down",
+                    "url": "/settings",
+                    "children": [
+                        {
+                            "id": 301,
+                            "title": "All Category",
+                            "icon": "list",
+                            "url": ""
+                        },
+                        {
+                            "id": 302,
+                            "title": "Create Main Category",
+                            "icon": "plus",
+                            "url": ""
+                        },
+                        {
+                            "id": 303,
+                            "title": "Create Sub Category",
+                            "icon": "circle-plus",
+                            "url": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "400",
+                    "menuName": "orders",
+                    "title": "Orders",
+                    "icon": "shopping-cart",
+                    "dropdownIcon": "angle-down",
+                    "url": "/",
+                    "children": [
+                        {
+                            "id": 401,
+                            "title": "All Orders",
+                            "icon": "list",
+                            "url": ""
+                        },
+                        {
+                            "id": 402,
+                            "title": "Order Tracking",
+                            "icon": "route",
+                            "url": ""
+                        },
+                        {
+                            "id": 403,
+                            "title": "Order Detail",
+                            "icon": "info-circle",
+                            "url": ""
+                        },
+                        {
+                            "id": 404,
+                            "title": "Create New Order",
+                            "icon": "plus",
+                            "url": ""
+                        },
+                        {
+                            "id": 405,
+                            "title": "Invoice",
+                            "icon": "file-invoice",
+                            "url": ""
+                        }
+                    ]
+                },
+                {
+                    "id": "500",
+                    "menuName": "sales",
+                    "title": "Sales",
+                    "icon": "chart-line",
+                    "dropdownIcon": "angle-down",
+                    "url": "/",
+                    "children": [
+                        {
+                            "id": 501,
+                            "title": "Orders",
+                            "icon": "shopping-cart",
+                            "url": "/"
+                        },
+                        {
+                            "id": 502,
+                            "title": "Transactions",
+                            "icon": "dollar-sign",
+                            "url": "/"
+                        }
+                    ]
+                },
+                {
+                    "id": "600",
+                    "menuName": "coupons",
+                    "title": "Coupons",
+                    "icon": "ticket-alt",
+                    "dropdownIcon": "angle-down",
+                    "url": "/",
+                    "children": [
+                        {
+                            "id": 601,
+                            "title": "All Coupons",
+                            "icon": "list",
+                            "url": "/"
+                        },
+                        {
+                            "id": 602,
+                            "title": "Create New Coupons",
+                            "icon": "plus",
+                            "url": "/"
+                        }
+                    ]
+                },
+                {
+                    "id": "700",
+                    "menuName": "invoice",
+                    "title": "Invoice",
+                    "icon": "file-invoice",
+                    "dropdownIcon": "angle-down",
+                    "url": "/",
+                    "children": [
+                        {
+                            "id": 701,
+                            "title": "All Invoices",
+                            "icon": "list",
+                            "url": "/"
+                        },
+                        {
+                            "id": 702,
+                            "title": "Overview",
+                            "icon": "eye",
+                            "url": "/"
+                        },
+                        {
+                            "id": 703,
+                            "title": "Create New Invoice",
+                            "icon": "plus",
+                            "url": "/"
+                        }
+                    ]
+                },
+                {
+                    "id": "800",
+                    "menuName": "user",
+                    "title": "User",
+                    "icon": "users",
+                    "dropdownIcon": "angle-down",
+                    "url": "/",
+                    "children": [
+                        {
+                            "id": 801,
+                            "title": "All User",
+                            "icon": "list",
+                            "url": "/"
+                        },
+                        {
+                            "id": 802,
+                            "title": "Create New User",
+                            "icon": "plus",
+                            "url": "/"
+                        }
+                    ]
+                },
+                {
+                    "id": "900",
+                    "menuName": "customer",
+                    "title": "Customer",
+                    "icon": "user",
+                    "dropdownIcon": "angle-down",
+                    "url": "/",
+                    "children": [
+                        {
+                            "id": 901,
+                            "title": "All Customers",
+                            "icon": "list",
+                            "url": "/"
+                        },
+                        {
+                            "id": 902,
+                            "title": "Create New Customer",
+                            "icon": "plus",
+                            "url": "/"
+                        }
+                    ]
+                },
+                {
+                    "id": "1000",
+                    "menuName": "vendor",
+                    "title": "Vendor",
+                    "icon": "user-tie",
+                    "dropdownIcon": "angle-down",
+                    "url": "/",
+                    "children": [
+                        {
+                            "id": 1001,
+                            "title": "All Vendors",
+                            "icon": "list",
+                            "url": "/"
+                        },
+                        {
+                            "id": 1002,
+                            "title": "Create New Vendor",
+                            "icon": "plus",
+                            "url": "/"
+                        }
+                    ]
+                },
+                {
+                    "id": "1100",
+                    "menuName": "localization",
+                    "title": "Localization",
+                    "icon": "globe",
+                    "dropdownIcon": "angle-down",
+                    "url": "/",
+                    "children": [
+                        {
+                            "id": 1101,
+                            "title": "Translations",
+                            "icon": "language",
+                            "url": "/"
+                        },
+                        {
+                            "id": 1102,
+                            "title": "Currency Rates",
+                            "icon": "money-bill",
+                            "url": "/"
+                        },
+                        {
+                            "id": 1103,
+                            "title": "Taxes",
+                            "icon": "percent",
+                            "url": "/"
+                        }
+                    ]
+                },
+                {
+                    "id": "1200",
+                    "menuName": "accounts",
+                    "title": "Accounts",
+                    "icon": "user-cog",
+                    "dropdownIcon": "angle-down",
+                    "url": "/",
+                    "children": [
+                        {
+                            "id": 1201,
+                            "title": "My Account",
+                            "icon": "user",
+                            "url": "/"
+                        },
+                        {
+                            "id": 1202,
+                            "title": "Password Reset",
+                            "icon": "key",
+                            "url": "/"
+                        },
+                        {
+                            "id": 1203,
+                            "title": "Two Step Verify",
+                            "icon": "lock",
+                            "url": "/"
+                        },
+                        {
+                            "id": 1204,
+                            "title": "Forgot Password",
+                            "icon": "envelope",
+                            "url": "/"
+                        },
+                        {
+                            "id": 1205,
+                            "title": "Logout",
+                            "icon": "sign-out-alt",
+                            "url": "/"
+                        }
+                    ]
+                },
+                {
+                    "id": "1300",
+                    "menuName": "shipment",
+                    "title": "Shipment",
+                    "icon": "truck",
+                    "dropdownIcon": "angle-down",
+                    "url": "/",
+                    "children": [
+                        {
+                            "id": 1301,
+                            "title": "All Shipment",
+                            "icon": "list",
+                            "url": "/"
+                        },
+                        {
+                            "id": 1302,
+                            "title": "Create New Shipment",
+                            "icon": "plus",
+                            "url": "/"
+                        }
+                    ]
+                },
+                {
+                    "id": "1400",
+                    "menuName": "chat",
+                    "title": "Chat",
+                    "icon": "comments",
+                    "url": "/"
+                },
+                {
+                    "id": "1500",
+                    "menuName": "statistics",
+                    "title": "Statistics",
+                    "icon": "chart-bar",
+                    "url": "/"
+                },
+                {
+                    "id": "1600",
+                    "menuName": "reviewRating",
+                    "title": "Review & Rating",
+                    "icon": "star",
+                    "url": "/"
+                },
+                {
+                    "id": "1700",
+                    "menuName": "supportTicket",
+                    "title": "Support Ticket",
+                    "icon": "ticket-alt",
+                    "url": "/"
+                },
+                {
+                    "id": "1800",
+                    "menuName": "reports",
+                    "title": "Reports",
+                    "icon": "file-alt",
+                    "url": "/"
+                },
+                {
+                    "id": "1900",
+                    "menuName": "calendar",
+                    "title": "Calendar",
+                    "icon": "calendar",
+                    "url": "/"
+                }
+            ]
+        },
+        "links": {
+            "self": "/api/sidebarMenu",
+            "documentation": "/api/docs#sidebarMenu"
+        },
+        "errors": []
+    },
+    "dashboardMetrics": {
+        "meta": {
+            "status": "success",
+            "code": 200,
+            "message": "Dashboard metrics retrieved successfully",
+            "timestamp": "2024-08-31T14:00:00Z",
+            "requestId": "def456-ghi789-jkl012",
+            "responseTimeMs": 150,
+            "apiVersion": "1.0",
+            "locale": "en-US"
+        },
+        "data": {
+            "type": "metrics",
+            "id": "dashboard_metrics_2024-08-31",
+            "topSalesMetrics": {
+                "id": "total_sales",
+                "title": "Total Sales",
+                "value": 1543200,
+                "currency": "USD",
+                "period": {
+                    "start": "2024-01-01",
+                    "end": "2024-08-27"
+                },
+                "salesByCountry": [
+                    {
+                        "id": 1,
+                        "country": "Serbia",
+                        "countryCode": "RS",
+                        "sales": 600000,
+                        "percentage": 38.9,
+                        "isPrimaryDestination": true
+                    },
+                    {
+                        "id": 2,
+                        "country": "Greenland",
+                        "countryCode": "DK",
+                        "sales": 320000,
+                        "percentage": 20.7,
+                        "dependsOn": "Serbia"
+                    },
+                    {
+                        "id": 3,
+                        "country": "Brazil",
+                        "countryCode": "BR",
+                        "sales": 250000,
+                        "percentage": 16.2,
+                        "dependsOn": "Serbia"
+                    },
+                    {
+                        "id": 4,
+                        "country": "Australia",
+                        "countryCode": "AUD",
+                        "sales": 180000,
+                        "percentage": 11.7,
+                        "dependsOn": "Serbia"
+                    },
+                    {
+                        "id": 5,
+                        "country": "Russia",
+                        "countryCode": "RUB",
+                        "sales": 160000,
+                        "percentage": 10.4,
+                        "dependsOn": "Serbia"
+                    },
+                    {
+                        "id": 6,
+                        "country": "Canada",
+                        "countryCode": "CA",
+                        "sales": 120000,
+                        "percentage": 7.8,
+                        "dependsOn": "Serbia"
+                    },
+                    {
+                        "id": 7,
+                        "country": "Mexico",
+                        "countryCode": "JP",
+                        "sales": 78000,
+                        "percentage": 5.1,
+                        "dependsOn": "Serbia"
+                    },
+                    {
+                        "id": 8,
+                        "country": "Pakistan",
+                        "countryCode": "PK",
+                        "sales": 78000,
+                        "percentage": 5.1,
+                        "dependsOn": "Serbia"
+                    }
+                ],
+                "topSellingProducts": [
+                    {
+                        "productId": "P12345",
+                        "productName": "Smartphone X",
+                        "unitsSold": 15000,
+                        "revenue": 750000
+                    },
+                    {
+                        "productId": "P67890",
+                        "productName": "Laptop Pro",
+                        "unitsSold": 8000,
+                        "revenue": 560000
+                    },
+                    {
+                        "productId": "P54321",
+                        "productName": "Wireless Earbuds",
+                        "unitsSold": 25000,
+                        "revenue": 175000
+                    }
+                ]
+            },
+            "monthlyRevenue": [
+                {
+                    "id": 1,
+                    "month": "Jan",
+                    "orders": 180,
+                    "refunds": 100,
+                    "earnings": 200,
+                    "date": "2022-01-01"
+                },
+                {
+                    "id": 2,
+                    "month": "Feb",
+                    "orders": 274,
+                    "refunds": 174,
+                    "earnings": 360,
+                    "date": "2022-02-01"
+                },
+                {
+                    "id": 3,
+                    "month": "Mar",
+                    "orders": 346,
+                    "refunds": 302,
+                    "earnings": 320,
+                    "date": "2022-03-01"
+                },
+                {
+                    "id": 4,
+                    "month": "Apr",
+                    "orders": 290,
+                    "refunds": 411,
+                    "earnings": 345,
+                    "date": "2022-04-01"
+                },
+                {
+                    "id": 5,
+                    "month": "May",
+                    "orders": 370,
+                    "refunds": 300,
+                    "earnings": 436,
+                    "date": "2022-05-01"
+                },
+                {
+                    "id": 6,
+                    "month": "Jun",
+                    "orders": 420,
+                    "refunds": 284,
+                    "earnings": 527,
+                    "date": "2022-06-01"
+                },
+                {
+                    "id": 7,
+                    "month": "Jul",
+                    "orders": 490,
+                    "refunds": 273,
+                    "earnings": 641,
+                    "date": "2022-07-01"
+                },
+                {
+                    "id": 8,
+                    "month": "Aug",
+                    "orders": 542,
+                    "refunds": 232,
+                    "earnings": 715,
+                    "date": "2022-08-01"
+                },
+                {
+                    "id": 9,
+                    "month": "Sep",
+                    "orders": 510,
+                    "refunds": 187,
+                    "earnings": 832,
+                    "date": "2022-09-01"
+                },
+                {
+                    "id": 10,
+                    "month": "Oct",
+                    "orders": 580,
+                    "refunds": 174,
+                    "earnings": 794,
+                    "date": "2022-10-01"
+                },
+                {
+                    "id": 11,
+                    "month": "Nov",
+                    "orders": 636,
+                    "refunds": 152,
+                    "earnings": 865,
+                    "date": "2022-11-01"
+                },
+                {
+                    "id": 12,
+                    "month": "Dec",
+                    "orders": 745,
+                    "refunds": 122,
+                    "earnings": 933,
+                    "date": "2022-12-01"
+                }
+            ],
+            "summaryMetrics": [
+                {
+                    "id": 1,
+                    "title": "Total Earnings",
+                    "value": 98851.35,
+                    "currency": "USD",
+                    "change": {
+                        "percentage": 18.30,
+                        "trend": "up"
+                    },
+                    "lastUpdated": "2024-08-30T15:45:22Z"
+                },
+                {
+                    "id": 2,
+                    "title": "Orders",
+                    "value": 65802,
+                    "currency": null,
+                    "change": {
+                        "percentage": -2.74,
+                        "trend": "down"
+                    },
+                    "lastUpdated": "2024-08-30T15:45:22Z"
+                },
+                {
+                    "id": 3,
+                    "title": "Customers",
+                    "value": 79958,
+                    "currency": null,
+                    "change": {
+                        "percentage": 29.08,
+                        "trend": "up"
+                    },
+                    "lastUpdated": "2024-08-30T15:45:22Z"
+                },
+                {
+                    "id": 4,
+                    "title": "Products",
+                    "value": 36758,
+                    "currency": null,
+                    "change": {
+                        "percentage": 1.67,
+                        "trend": "up"
+                    },
+                    "lastUpdated": "2024-08-30T15:45:22Z"
+                }
+            ]
+        },
+        "links": {
+            "self": "/api/dashboardMetrics",
+            "documentation": "/api/docs#dashboardMetrics"
+        },
+        "errors": []
+    },
+    "recentOrders": [
+        {
+            "orderId": "#TB010331",
+            "productName": "Macbook Pro",
+            "customer": {
+                "name": "Terry White",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 658.00,
+                "currency": "USD"
+            },
+            "orderDate": "2022-12-17",
+            "deliveryDate": "2023-01-26",
+            "vendor": "Brazil",
+            "ratings": 4.5,
+            "status": "New"
+        },
+        {
+            "orderId": "#TB010332",
+            "productName": "Borosil Paper Cup",
+            "customer": {
+                "name": "Daniel Gonzalez",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 345.00,
+                "currency": "USD"
+            },
+            "orderDate": "2023-01-02",
+            "deliveryDate": "2023-01-26",
+            "vendor": "Namibia",
+            "ratings": 4.8,
+            "status": "Out Of Delivery"
+        },
+        {
+            "orderId": "#TB010333",
+            "productName": "Stillbird Helmet",
+            "customer": {
+                "name": "Stephen Bird",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 80.00,
+                "currency": "USD"
+            },
+            "orderDate": "2022-12-20",
+            "deliveryDate": "2022-12-29",
+            "vendor": "USA",
+            "ratings": 4.3,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010334",
+            "productName": "Bentwood Chair",
+            "customer": {
+                "name": "Ashley Silva",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 349.99,
+                "currency": "USD"
+            },
+            "orderDate": "2022-11-31",
+            "deliveryDate": "2022-12-13",
+            "vendor": "Argentina",
+            "ratings": 3.9,
+            "status": "Pending"
+        },
+        {
+            "orderId": "#TB010335",
+            "productName": "Apple Headphone",
+            "customer": {
+                "name": "Scott Wilson",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 264.37,
+                "currency": "USD"
+            },
+            "orderDate": "2022-11-23",
+            "deliveryDate": "2022-12-03",
+            "vendor": "Jersey",
+            "ratings": 4.7,
+            "status": "Shipping"
+        },
+        {
+            "orderId": "#TB010336",
+            "productName": "Smart Watch for Man's",
+            "customer": {
+                "name": "Heather Jimenez",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 741.98,
+                "currency": "USD"
+            },
+            "orderDate": "2022-11-02",
+            "deliveryDate": "2022-11-12",
+            "vendor": "Spain",
+            "ratings": 4.4,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010337",
+            "productName": "Gaming Mouse",
+            "customer": {
+                "name": "Edward Johnson",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 59.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-01-10",
+            "deliveryDate": "2023-01-20",
+            "vendor": "Canada",
+            "ratings": 4.6,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010338",
+            "productName": "Bluetooth Speaker",
+            "customer": {
+                "name": "Mia Clark",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 129.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-02-05",
+            "deliveryDate": "2023-02-15",
+            "vendor": "Germany",
+            "ratings": 4.2,
+            "status": "New"
+        },
+        {
+            "orderId": "#TB010339",
+            "productName": "Portable Charger",
+            "customer": {
+                "name": "James Lee",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 49.95,
+                "currency": "USD"
+            },
+            "orderDate": "2023-02-12",
+            "deliveryDate": "2023-02-22",
+            "vendor": "China",
+            "ratings": 4.9,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010340",
+            "productName": "Wireless Keyboard",
+            "customer": {
+                "name": "Sophia Martinez",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 85.75,
+                "currency": "USD"
+            },
+            "orderDate": "2023-01-22",
+            "deliveryDate": "2023-02-01",
+            "vendor": "South Korea",
+            "ratings": 4.7,
+            "status": "Out Of Delivery"
+        },
+        {
+            "orderId": "#TB010341",
+            "productName": "Fitness Tracker",
+            "customer": {
+                "name": "Benjamin Harris",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 99.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-03-01",
+            "deliveryDate": "2023-03-11",
+            "vendor": "Mexico",
+            "ratings": 4.5,
+            "status": "Pending"
+        },
+        {
+            "orderId": "#TB010342",
+            "productName": "Noise-Cancelling Headphones",
+            "customer": {
+                "name": "Grace Foster",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 249.95,
+                "currency": "USD"
+            },
+            "orderDate": "2023-03-10",
+            "deliveryDate": "2023-03-20",
+            "vendor": "Japan",
+            "ratings": 4.6,
+            "status": "Shipping"
+        },
+        {
+            "orderId": "#TB010343",
+            "productName": "Wireless Earbuds",
+            "customer": {
+                "name": "Olivia Parker",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 75.50,
+                "currency": "USD"
+            },
+            "orderDate": "2023-04-01",
+            "deliveryDate": "2023-04-10",
+            "vendor": "India",
+            "ratings": 4.8,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010344",
+            "productName": "Electric Toothbrush",
+            "customer": {
+                "name": "Liam Adams",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 39.95,
+                "currency": "USD"
+            },
+            "orderDate": "2023-04-08",
+            "deliveryDate": "2023-04-18",
+            "vendor": "Thailand",
+            "ratings": 4.4,
+            "status": "Out Of Delivery"
+        },
+        {
+            "orderId": "#TB010345",
+            "productName": "Digital Camera",
+            "customer": {
+                "name": "Emma Mitchell",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 449.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-04-15",
+            "deliveryDate": "2023-04-25",
+            "vendor": "France",
+            "ratings": 4.3,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010346",
+            "productName": "Drone",
+            "customer": {
+                "name": "David Clark",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 699.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-05-01",
+            "deliveryDate": "2023-05-10",
+            "vendor": "Russia",
+            "ratings": 4.1,
+            "status": "New"
+        },
+        {
+            "orderId": "#TB010347",
+            "productName": "Smart TV",
+            "customer": {
+                "name": "Ethan Campbell",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 1099.00,
+                "currency": "USD"
+            },
+            "orderDate": "2023-05-05",
+            "deliveryDate": "2023-05-15",
+            "vendor": "Italy",
+            "ratings": 4.7,
+            "status": "Pending"
+        },
+        {
+            "orderId": "#TB010348",
+            "productName": "Home Theater System",
+            "customer": {
+                "name": "Ava Collins",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 899.00,
+                "currency": "USD"
+            },
+            "orderDate": "2023-05-12",
+            "deliveryDate": "2023-05-22",
+            "vendor": "United Kingdom",
+            "ratings": 4.8,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010349",
+            "productName": "Smartphone",
+            "customer": {
+                "name": "Isabella Howard",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 799.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-05-20",
+            "deliveryDate": "2023-05-30",
+            "vendor": "Australia",
+            "ratings": 4.6,
+            "status": "Shipping"
+        },
+        {
+            "orderId": "#TB010350",
+            "productName": "Gaming Console",
+            "customer": {
+                "name": "Charlotte Stewart",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 499.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-06-01",
+            "deliveryDate": "2023-06-10",
+            "vendor": "New Zealand",
+            "ratings": 4.9,
+            "status": "New"
+        },
+        {
+            "orderId": "#TB010351",
+            "productName": "Tablet",
+            "customer": {
+                "name": "William Turner",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 329.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-06-05",
+            "deliveryDate": "2023-06-15",
+            "vendor": "Brazil",
+            "ratings": 4.5,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010352",
+            "productName": "Smart Home Hub",
+            "customer": {
+                "name": "Lucas Green",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 199.00,
+                "currency": "USD"
+            },
+            "orderDate": "2023-06-12",
+            "deliveryDate": "2023-06-22",
+            "vendor": "United States",
+            "ratings": 4.2,
+            "status": "Out Of Delivery"
+        },
+        {
+            "orderId": "#TB010353",
+            "productName": "Electric Scooter",
+            "customer": {
+                "name": "Mason Lewis",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 329.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-06-18",
+            "deliveryDate": "2023-06-28",
+            "vendor": "Netherlands",
+            "ratings": 4.3,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010354",
+            "productName": "Robot Vacuum",
+            "customer": {
+                "name": "Harper Morris",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 349.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-07-01",
+            "deliveryDate": "2023-07-11",
+            "vendor": "Austria",
+            "ratings": 4.6,
+            "status": "Pending"
+        },
+        {
+            "orderId": "#TB010355",
+            "productName": "Smart Lock",
+            "customer": {
+                "name": "Evelyn Martinez",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 149.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-07-10",
+            "deliveryDate": "2023-07-20",
+            "vendor": "Belgium",
+            "ratings": 4.1,
+            "status": "New"
+        },
+        {
+            "orderId": "#TB010356",
+            "productName": "Air Purifier",
+            "customer": {
+                "name": "Henry Parker",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 199.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-07-15",
+            "deliveryDate": "2023-07-25",
+            "vendor": "China",
+            "ratings": 4.5,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010357",
+            "productName": "Laptop Stand",
+            "customer": {
+                "name": "Madison Davis",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 39.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-07-20",
+            "deliveryDate": "2023-07-30",
+            "vendor": "Poland",
+            "ratings": 4.4,
+            "status": "Shipping"
+        },
+        {
+            "orderId": "#TB010358",
+            "productName": "Monitor Arm",
+            "customer": {
+                "name": "Layla White",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 79.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-08-01",
+            "deliveryDate": "2023-08-11",
+            "vendor": "Spain",
+            "ratings": 4.7,
+            "status": "Out Of Delivery"
+        },
+        {
+            "orderId": "#TB010359",
+            "productName": "Desk Lamp",
+            "customer": {
+                "name": "Jack Thomas",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 25.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-08-05",
+            "deliveryDate": "2023-08-15",
+            "vendor": "Italy",
+            "ratings": 4.6,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010360",
+            "productName": "Wireless Charger",
+            "customer": {
+                "name": "Scarlett Hill",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 29.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-08-12",
+            "deliveryDate": "2023-08-22",
+            "vendor": "Mexico",
+            "ratings": 4.8,
+            "status": "New"
+        },
+        {
+            "orderId": "#TB010361",
+            "productName": "Smart Light Bulb",
+            "customer": {
+                "name": "Daniel Baker",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 19.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-08-20",
+            "deliveryDate": "2023-08-30",
+            "vendor": "United Kingdom",
+            "ratings": 4.5,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010362",
+            "productName": "Coffee Maker",
+            "customer": {
+                "name": "Victoria Scott",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 89.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-09-01",
+            "deliveryDate": "2023-09-11",
+            "vendor": "United States",
+            "ratings": 4.7,
+            "status": "Out Of Delivery"
+        },
+        {
+            "orderId": "#TB010363",
+            "productName": "Blender",
+            "customer": {
+                "name": "Emily Cooper",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 49.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-09-05",
+            "deliveryDate": "2023-09-15",
+            "vendor": "Australia",
+            "ratings": 4.6,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010364",
+            "productName": "Microwave Oven",
+            "customer": {
+                "name": "Michael Nelson",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 199.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-09-12",
+            "deliveryDate": "2023-09-22",
+            "vendor": "France",
+            "ratings": 4.3,
+            "status": "Pending"
+        },
+        {
+            "orderId": "#TB010365",
+            "productName": "Toaster",
+            "customer": {
+                "name": "Lucas Gray",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 24.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-09-18",
+            "deliveryDate": "2023-09-28",
+            "vendor": "Germany",
+            "ratings": 4.7,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010366",
+            "productName": "Electric Kettle",
+            "customer": {
+                "name": "Mia Rodriguez",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 34.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-09-25",
+            "deliveryDate": "2023-10-05",
+            "vendor": "South Korea",
+            "ratings": 4.4,
+            "status": "New"
+        },
+        {
+            "orderId": "#TB010367",
+            "productName": "Air Fryer",
+            "customer": {
+                "name": "Oliver Perez",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 129.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-10-01",
+            "deliveryDate": "2023-10-11",
+            "vendor": "Thailand",
+            "ratings": 4.6,
+            "status": "Shipping"
+        },
+        {
+            "orderId": "#TB010368",
+            "productName": "Rice Cooker",
+            "customer": {
+                "name": "Avery Brooks",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 59.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-10-05",
+            "deliveryDate": "2023-10-15",
+            "vendor": "Vietnam",
+            "ratings": 4.5,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010369",
+            "productName": "Pressure Cooker",
+            "customer": {
+                "name": "Ella Edwards",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 89.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-10-12",
+            "deliveryDate": "2023-10-22",
+            "vendor": "Japan",
+            "ratings": 4.8,
+            "status": "Out Of Delivery"
+        },
+        {
+            "orderId": "#TB010370",
+            "productName": "Hand Mixer",
+            "customer": {
+                "name": "Benjamin Green",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 29.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-10-18",
+            "deliveryDate": "2023-10-28",
+            "vendor": "Argentina",
+            "ratings": 4.3,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010371",
+            "productName": "Juicer",
+            "customer": {
+                "name": "Carter Wright",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 79.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-10-25",
+            "deliveryDate": "2023-11-04",
+            "vendor": "Canada",
+            "ratings": 4.6,
+            "status": "Pending"
+        },
+        {
+            "orderId": "#TB010372",
+            "productName": "Food Processor",
+            "customer": {
+                "name": "Zoe Baker",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 119.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-11-01",
+            "deliveryDate": "2023-11-11",
+            "vendor": "New Zealand",
+            "ratings": 4.7,
+            "status": "New"
+        },
+        {
+            "orderId": "#TB010373",
+            "productName": "Slow Cooker",
+            "customer": {
+                "name": "Sofia Russell",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 49.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-11-10",
+            "deliveryDate": "2023-11-20",
+            "vendor": "India",
+            "ratings": 4.8,
+            "status": "Delivered"
+        },
+        {
+            "orderId": "#TB010374",
+            "productName": "Induction Cooktop",
+            "customer": {
+                "name": "Aria Ramirez",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 149.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-11-15",
+            "deliveryDate": "2023-11-25",
+            "vendor": "Brazil",
+            "ratings": 4.7,
+            "status": "Shipping"
+        },
+        {
+            "orderId": "#TB010375",
+            "productName": "Gas Stove",
+            "customer": {
+                "name": "Leo Anderson",
+                "img": "https://i.pravatar.cc"
+            },
+            "amount": {
+                "price": 249.99,
+                "currency": "USD"
+            },
+            "orderDate": "2023-11-22",
+            "deliveryDate": "2023-12-02",
+            "vendor": "United States",
+            "ratings": 4.2,
+            "status": "Out Of Delivery"
+        }
+    ]
+}
