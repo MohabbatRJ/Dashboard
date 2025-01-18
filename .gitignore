@@ -23,6 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-db/db2.json
+/db/db2.json
 db/db3.json
 db/generateData.js
