@@ -63,7 +63,7 @@ const AuthForm = ({
                 'AuthForm'
             );
         }
-    }, [formType, repeatPassword]);
+    }, [formType, onSubmit, email, setEmail, password, setPassword, showPassword1, togglePasswordVisibility1, navigate]);
     return (
         <section className="loginForm py-8 min-h-svh max-w-xl mx-auto flex items-center justify-center flex-col">
             <div className="w-full flex items-center justify-center">

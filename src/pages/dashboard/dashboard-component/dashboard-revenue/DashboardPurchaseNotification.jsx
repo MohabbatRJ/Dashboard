@@ -16,6 +16,7 @@ function DashboardPurchaseNotification() {
                     </div>
                 </div>
                 <Button
+                    type="button"
                     className="capitalized font-medium text-sm text-truncate mb-0 flex items-center gap-1 bg-primary-600 group hover:bg-primary-800 transition-all duration-1000 ease-in-out hover:-translate-y-1 text-white dark:text-gray-300 dark:bg-gray-700 dark:hover:bg-gray-900 rounded-full w-fit "
                 >
                     <div className="flex items-center justify-center bg-primary-500 group-hover:bg-primary-700 dark:bg-gray-500 dark:group-hover:bg-gray-700 transition-all duration-1000 ease-in-out w-12 h-12 rounded-full">

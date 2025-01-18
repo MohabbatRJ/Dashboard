@@ -77,6 +77,7 @@ const DashboardRevenue = ({ revenueTrend }) => {
                             <Button
                                 key={period}
                                 onClick={() => setSelectedPeriod(period)}
+                                type="button"
                                 className={`bg-primary-500 text-white hover:bg-primary-600 active:bg-primary-700 focus:outline-none focus:ring-none rounded px-2 font-base ${selectedPeriod === period ? 'bg-primary-600' : ''}`}
                             >
                                 {period}

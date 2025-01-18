@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+db/db2.json
+db/db3.json
+db/generateData.js

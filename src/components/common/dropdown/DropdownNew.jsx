@@ -18,7 +18,7 @@ function DropdownNew({ label, dropdownMenuName, buttonFunc, children, title, ite
                 <span className="text-black dark:text-gray-100 font-semibold text-sm capitalize">
                     {label}
                 </span>
-                <Button buttonFunc={() => toggleState(dropdownMenuName)}
+                <Button type='button' buttonFunc={() => toggleState(dropdownMenuName)}
                     className='capitalized font-medium text-sm text-slate-400 text-truncate mb-0 flex items-center gap-1'>
                     {items.map((item, index) =>
                         item.selected === true ? <span key={index}>{item.label}</span> : null

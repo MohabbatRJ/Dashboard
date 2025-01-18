@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from 'prop-types';
 
 function ShowPassword({showFunc, showState}) {
     return (
@@ -16,5 +16,10 @@ function ShowPassword({showFunc, showState}) {
         </>
     )
 }
+
+ShowPassword.propTypes = {
+    showFunc: PropTypes.func.isRequired,
+    showState: PropTypes.bool.isRequired,
+};
 
 export default ShowPassword

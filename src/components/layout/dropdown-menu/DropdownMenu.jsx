@@ -1,8 +1,8 @@
-import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom'
 import Button from '../../common/button/Button';
 import { toggleUIState } from '../../../store/actions/uiActions/uiAction';
+import PropTypes from 'prop-types';
 
 function DropdownMenu({ dropdownMenuName, childrenMenu }) {
     const uiState = useSelector((state) => state.ui);
@@ -58,5 +58,10 @@ function DropdownMenu({ dropdownMenuName, childrenMenu }) {
         </>
     )
 }
+
+DropdownMenu.propTypes = {
+    dropdownMenuName: PropTypes.string.isRequired,
+    childrenMenu: PropTypes.array.isRequired, // Validate that showState is a required boolean
+};
 
 export default DropdownMenu

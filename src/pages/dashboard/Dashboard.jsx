@@ -16,6 +16,7 @@ import DashboardRevenue from './dashboard-component/dashboard-revenue/DashboardR
 import DashboardPurchaseNotification from './dashboard-component/dashboard-revenue/DashboardPurchaseNotification';
 import DashboardRecentOrderTable from './dashboard-component/dashboard-recent-order-table/DashboardRecentOrderTable';
 import { fetchRecentOrders } from '../../store/actions/recentOrdersAction/recentOrdersFetch/recentOrdersFetch';
+import DashboardStockReportTable from './dashboard-component/dashboard-stock-report-table/DashboardStockReportTable';
 
 function Dashboard() {
   const dispatch = useDispatch();
@@ -116,6 +117,9 @@ function Dashboard() {
             </div>
             <div className="lg:col-span-2 grid lg:grid-cols-auto grid-rows-auto border border-gray-200 dark:border-gray-700 rounded-md">
               <DashboardRecentOrderTable tableData={recentOrders} pagination={pagination} currencySign={currencySign} loading={isLoading} />
+            </div>
+            <div className="lg:col-span-2 grid lg:grid-cols-auto grid-rows-auto border border-gray-200 dark:border-gray-700 rounded-md">
+              <DashboardStockReportTable tableData={recentOrders} pagination={pagination} currencySign={currencySign} loading={isLoading} />
             </div>
           </div>
         </div>

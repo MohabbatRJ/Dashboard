@@ -107,6 +107,7 @@ const Header = () => {
                                     <Button
                                         buttonFunc={handleLogout}
                                         className="bg-btn-primary-700"
+                                        type="button"
                                     >
                                         Logout
                                     </Button>

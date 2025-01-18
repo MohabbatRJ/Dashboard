@@ -1,4 +1,5 @@
-import React, { memo } from 'react'
+import PropTypes from 'prop-types';
+import { memo } from 'react'
 
 function Button({ type, buttonFunc, className = '', children, ...props }) {
     return (
@@ -9,5 +10,12 @@ function Button({ type, buttonFunc, className = '', children, ...props }) {
         </>
     )
 }
+
+Button.propTypes = {
+    type: PropTypes.string.isRequired,
+    buttonFunc: PropTypes.func,
+    className: PropTypes.string,
+    children: PropTypes.node.isRequired,
+};
 
 export default memo(Button);
