@@ -17,6 +17,7 @@ import DashboardPurchaseNotification from './dashboard-component/dashboard-reven
 import DashboardRecentOrderTable from './dashboard-component/dashboard-recent-order-table/DashboardRecentOrderTable';
 import { fetchRecentOrders } from '../../store/actions/recentOrdersAction/recentOrdersFetch/recentOrdersFetch';
 import DashboardStockReportTable from './dashboard-component/dashboard-stock-report-table/DashboardStockReportTable';
+import { fetchStockReport } from '../../store/actions/stockReportAction/stockReportFetch/stockReportFetch';
 
 function Dashboard() {
   const dispatch = useDispatch();
@@ -28,8 +29,10 @@ function Dashboard() {
 
   const { metrics, loading: dashboardLoading, error: dashboardError } = useSelector(state => state.dashboard);
   const { recentOrders, pagination, loading: recentOrdersLoading, error: recentOrdersError } = useSelector(state => state.recentOrders);
-  const isLoading = dashboardLoading || recentOrdersLoading;
-  const isError = dashboardError || recentOrdersError;
+  const { stockReport, pagination: stockPagination, loading: stockReportLoading, error: stockReportError } = useSelector(state => state.stockReport);
+
+  const isLoading = dashboardLoading || recentOrdersLoading || stockReportLoading;
+  const isError = dashboardError || recentOrdersError || stockReportError;
 
 
   const { summaryMetrics, salesByCountry, topSellingProducts, monthlyRevenue, topSalesMetrics } = metrics;
@@ -37,17 +40,11 @@ function Dashboard() {
 
   useEffect(() => {
     if (isLoggedIn) {
-      dispatch(fetchRecentOrders(1));
-    }
-  }, [isLoggedIn, dispatch]);
-  useEffect(() => {
-    if (isLoggedIn) {
       dispatch(fetchDashboardMetrics());
       dispatch(fetchRecentOrders(1));
+      dispatch(fetchStockReport(1));
     }
   }, [isLoggedIn, dispatch]);
-
-
 
   useEffect(() => {
     const fetchData = async () => {
@@ -119,7 +116,7 @@ function Dashboard() {
               <DashboardRecentOrderTable tableData={recentOrders} pagination={pagination} currencySign={currencySign} loading={isLoading} />
             </div>
             <div className="lg:col-span-2 grid lg:grid-cols-auto grid-rows-auto border border-gray-200 dark:border-gray-700 rounded-md">
-              <DashboardStockReportTable tableData={recentOrders} pagination={pagination} currencySign={currencySign} loading={isLoading} />
+              <DashboardStockReportTable tableData={stockReport} pagination={stockPagination} currencySign={currencySign} loading={isLoading} />
             </div>
           </div>
         </div>

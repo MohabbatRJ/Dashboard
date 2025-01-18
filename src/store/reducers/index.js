@@ -6,6 +6,7 @@ import uiReducer from '../reducers/uiReducers/uiReducers';
 import sidebarMenuReducer from './sidebarMenuReducers/sidebarMenuReducer';
 import dashboardReducer from './dashboardReducers/dashboardReducers';
 import recentOrdersReducer from './recentOrdersReducers/recentOrdersReducer';
+import stockReportReducer from './stockReportReducers/stockReportReducer';
 
 
 const rootReducer = combineReducers({
@@ -13,7 +14,8 @@ const rootReducer = combineReducers({
   ui: uiReducer,
   sidebarMenu: sidebarMenuReducer,
   dashboard: dashboardReducer,
-  recentOrders:recentOrdersReducer
+  recentOrders: recentOrdersReducer,
+  stockReport: stockReportReducer
   // other reducers...
 });
 

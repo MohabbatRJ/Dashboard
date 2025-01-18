@@ -5,7 +5,7 @@ import TablePagination from './data-table-component/TablePagination';
 import { memo, useCallback } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const DataTable = ({ ...dropdownProps }) => {
+const DataTable = () => {
     
     const renderCellContent = useCallback((column, value, dataRow) => {
         if (column.render) {
@@ -67,7 +67,6 @@ const DataTable = ({ ...dropdownProps }) => {
     return (
         <div className="relative overflow-x-auto sm:rounded-lg">
             <TableHeader
-                {...dropdownProps}
             />
             <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                 <TableHead/>

@@ -22,6 +22,8 @@ function DashboardStockReportTable({ tableData, pagination, currencySign }) {
             )
         );
     }, []);
+
+    // eslint-disable-next-line no-unused-vars
     const dropdownProps = useMemo(() => ({
         label: 'sort by',
         menuName: 'recentOrderDropdownMenu',
@@ -30,47 +32,49 @@ function DashboardStockReportTable({ tableData, pagination, currencySign }) {
         handleSelection: handleRecentOrderDropdownSelection,
         arrow: true
     }), [recentOrderDropdownItems, handleRecentOrderDropdownSelection]);
+    const generateReport = useCallback(() => {
+        console.log('generate')
+    }, [])
+    const headerButton = useMemo(() => ({
+        label: 'Generate Report',
+        buttonName: 'generateReport',
+        type: 'button',
+        css: "py-2 px-6 bg-primary-100 text-primary-500 text-xs font-bold rounded-md hover:bg-primary-200 transition duration-1000 ease-in-out",
+        handleSelection: generateReport,
+        icon: 'fa-regular fa-file-lines'
+    }), [generateReport]);
 
     const hasCheckbox = false;
     const tableTitle = "Stock Reports";
     const statusColorMap = useMemo(() => ({
-        Pending: 'text-yellow-500 bg-yellow-100',
-        completed: 'text-green-500 bg-green-100',
-        'Out Of Delivery': 'text-primary-500 bg-primary-100',
-        New: 'text-blue-500 bg-blue-100',
+        "Low Stock": 'text-yellow-500 bg-yellow-100',
+        "In Stock": 'text-green-500 bg-green-100',
+        'Out of Stock': 'text-primary-500 bg-primary-100',
     }), []);
 
     const columns = useMemo(() => [
         {
-            key: 'order_id',
-            label: 'Order ID',
+            key: 'product_id',
+            label: 'Product ID',
             isLink: true,
-            link: (value, row) => `/orders/${row.order_id}`,
+            link: (value, row) => `/products/${row.product_id}`,
         },
         {
-            key: 'items',
+            key: 'product',
             label: 'Product Name',
             isLink: true,
-            link: (value, row) => `/products/${row.items[0].item_id}`,
+            link: (value, row) => `/products/${row.product_id}`,
         },
         {
-            key: 'customer',
-            label: 'Customer Name',
-            isLink: true,
-            link: (value, row) => `/customers/${row.customer.customer_id}`,
-        },
-        {
-            key: 'payment',
+            key: 'amount',
             label: 'Amount',
-            render: (value) => `${currencySign[value.currency]}${value.total_amount_paid}`,
+            render: (value) => `${currencySign[value.currency]}${value.total_amount}`,
         },
-        { key: 'created_at', label: 'Order Date', render: (value) => new Date(value).toLocaleDateString(), },
-        { key: 'shipping', label: 'Delivery Date', render: (value) => new Date(value.estimated_delivery).toLocaleDateString(), },
-        { key: 'fulfilled_by', label: 'Vendor', render: (value) => value.vendor_country, },
-        { key: 'ratings', label: 'Ratings', render: (value, row) => row.items[0].ratings, },
+        { key: 'updated_date', label: 'Updated Date', render: (value) => new Date(value).toLocaleDateString(), },
+        { key: 'quantity', label: 'Quantity', render: (value, row) => row.quantity },
         {
-            key: 'status',
-            label: 'Status',
+            key: 'stock_status',
+            label: 'Stock Status',
             render: (value) => (
                 <span
                     className={`${statusColorMap[value] || 'text-gray-700 bg-gray-200'
@@ -86,7 +90,8 @@ function DashboardStockReportTable({ tableData, pagination, currencySign }) {
         <>
             <TableProvider
                 value={{
-                    dropdownProps: dropdownProps,
+                    dropdownProps: false,
+                    headerButton: headerButton,
                     tableData: tableData,
                     pagination: pagination,
                     currencySign: currencySign,

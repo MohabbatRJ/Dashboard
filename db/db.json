@@ -5384,40 +5384,183 @@
   ],
   "stocks": [
     {
-      "order_id": 123456,
-      "status": "completed",
-      "items": [
+      "product_id": "PROD001",
+      "product": [
         {
-          "item_id": "581df6a5-9310-440a-ab8e-b1570a687440",
-          "item_name": "Product 83",
-          "quantity": 1,
-          "sku": "SKU-obv-101",
-          "category": "Electronics",
-          "price": 180.28,
-          "total_price": 263.75
-        },
-        {
-          "item_id": "581df6a5-9310-440a-ab8e-b1570a687485",
-          "item_name": "Product 83 0",
-          "quantity": 1,
-          "sku": "SKU-obv-101",
-          "category": "Electronics",
-          "price": 180.28,
-          "total_price": 263.75
+          "item_name": "iPhone 13",
+          "item_photo": "https://www.apple.com/iphone-13/images/overview/hero/hero_static__dvsxv8smkkgi_large.jpg"
         }
       ],
-      "fulfilled_by": {
-        "warehouse": "Warehouse LA",
-        "vendor_country": "Brazil"
-      },
-      "shipping": {
-        "method": "Standard",
-        "estimated_delivery": "2024-12-06"
-      },
-      "tracking": {
-        "carrier": "FedEx",
-        "tracking_number": "d5fd3219-68b2-4d79-a654-3be19e1346e0",
-        "status": "shipped"
+      "category": "Electronics > Mobile Phones",
+      "brand": "Apple",
+      "totalStock": 500,
+      "lowStockAlert": false,
+      "updated_date": "18 Jan, 2025",
+      "stock_status": "In Stock",
+      "quantity": "50 PCS",
+      "amount": {
+        "total_amount": "999.00",
+        "currency": "USD"
+      }
+    },
+    {
+      "product_id": "PROD002",
+      "product": [
+        {
+          "item_name": "Samsung Galaxy S21",
+          "item_photo": "https://images.samsung.com/is/image/samsung/p6pim/levant/galaxy-s21/gallery/levant-galaxy-s21-5g-g991-sm-g991bzvdmea-368538358?$720_576_PNG$"
+        }
+      ],
+      "category": "Electronics > Mobile Phones",
+      "brand": "Samsung",
+      "totalStock": 300,
+      "lowStockAlert": false,
+      "updated_date": "18 Jan, 2025",
+      "stock_status": "In Stock",
+      "quantity": "30 PCS",
+      "amount": {
+        "total_amount": "799.00",
+        "currency": "USD"
+      }
+    },
+    {
+      "product_id": "PROD003",
+      "product": [
+        {
+          "item_name": "Sony WH-1000XM4",
+          "item_photo": "https://www.sony.com/image/sony-wh-1000xm4.jpg"
+        }
+      ],
+      "category": "Electronics > Headphones",
+      "brand": "Sony",
+      "totalStock": 200,
+      "lowStockAlert": true,
+      "updated_date": "18 Jan, 2025",
+      "stock_status": "Low Stock",
+      "quantity": "20 PCS",
+      "amount": {
+        "total_amount": "349.00",
+        "currency": "USD"
+      }
+    },
+    {
+      "product_id": "PROD004",
+      "product": [
+        {
+          "item_name": "Apple MacBook Pro",
+          "item_photo": "https://www.apple.com/macbook-pro/images/overview/hero_13__d1tfa5zby7e6_large.jpg"
+        }
+      ],
+      "category": "Electronics > Laptops",
+      "brand": "Apple",
+      "totalStock": 150,
+      "lowStockAlert": false,
+      "updated_date": "18 Jan, 2025",
+      "stock_status": "In Stock",
+      "quantity": "15 PCS",
+      "amount": {
+        "total_amount": "1299.00",
+        "currency": "USD"
+      }
+    },
+    {
+      "product_id": "PROD005",
+      "product": [
+        {
+          "item_name": "Dell XPS 13",
+          "item_photo": "https://i.dell.com/sites/csimages/Video_Imagery/all/xps-13-9300-laptop.jpg"
+        }
+      ],
+      "category": "Electronics > Laptops",
+      "brand": "Dell",
+      "totalStock": 120,
+      "lowStockAlert": true,
+      "updated_date": "18 Jan, 2025",
+      "stock_status": "Low Stock",
+      "quantity": "12 PCS",
+      "amount": {
+        "total_amount": "999.00",
+        "currency": "USD"
+      }
+    },
+    {
+      "product_id": "PROD006",
+      "product": [
+        {
+          "item_name": "iPad Pro",
+          "item_photo": "https://www.apple.com/ipad-pro/images/overview/hero/hero_11__enfip2k0x8ae_large.jpg"
+        }
+      ],
+      "category": "Electronics > Tablets",
+      "brand": "Apple",
+      "totalStock": 250,
+      "lowStockAlert": false,
+      "updated_date": "18 Jan, 2025",
+      "stock_status": "In Stock",
+      "quantity": "25 PCS",
+      "amount": {
+        "total_amount": "799.00",
+        "currency": "USD"
+      }
+    },
+    {
+      "product_id": "PROD007",
+      "product": [
+        {
+          "item_name": "Amazon Echo Dot",
+          "item_photo": "https://images-na.ssl-images-amazon.com/images/I/61IxWv3ecpL._AC_SL1000_.jpg"
+        }
+      ],
+      "category": "Electronics > Smart Speakers",
+      "brand": "Amazon",
+      "totalStock": 400,
+      "lowStockAlert": false,
+      "updated_date": "18 Jan, 2025",
+      "stock_status": "In Stock",
+      "quantity": "40 PCS",
+      "amount": {
+        "total_amount": "49.99",
+        "currency": "USD"
+      }
+    },
+    {
+      "product_id": "PROD008",
+      "product": [
+        {
+          "item_name": "GoPro Hero 9",
+          "item_photo": "https://gopro.com/content/dam/gopro/en/en/products/hero9-black/hero9-black-gallery-1.jpg"
+        }
+      ],
+      "category": "Electronics > Cameras",
+      "brand": "GoPro",
+      "totalStock": 180,
+      "lowStockAlert": true,
+      "updated_date": "18 Jan, 2025",
+      "stock_status": "Low Stock",
+      "quantity": "18 PCS",
+      "amount": {
+        "total_amount": "399.99",
+        "currency": "USD"
+      }
+    },
+    {
+      "product_id": "PROD009",
+      "product": [
+        {
+          "item_name": "Nintendo Switch",
+          "item_photo": "https://www.nintendo.com/content/dam/noa/en_US/hardware/switch/nintendo-switch-new-package/gallery/nintendo-switch-package1.jpg"
+        }
+      ],
+      "category": "Electronics > Gaming Consoles",
+      "brand": "Nintendo",
+      "totalStock": 220,
+      "lowStockAlert": false,
+      "updated_date": "18 Jan, 2025",
+      "stock_status": "In Stock",
+      "quantity": "22 PCS",
+      "amount": {
+        "total_amount": "299.99",
+        "currency": "USD"
       }
     }
   ]

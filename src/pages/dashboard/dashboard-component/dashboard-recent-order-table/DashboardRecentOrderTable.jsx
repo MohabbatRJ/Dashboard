@@ -31,6 +31,19 @@ function DashboardRecentOrderTable({ tableData, pagination, currencySign }) {
         arrow: true
     }), [recentOrderDropdownItems, handleRecentOrderDropdownSelection]);
 
+    const generateReport = useCallback(() => {
+        console.log('generate')
+    }, [])
+    // eslint-disable-next-line no-unused-vars
+    const headerButton = useMemo(() => ({
+        label: 'Generate Report',
+        buttonName: 'generateReport',
+        type: 'button',
+        css: "py-2 px-6 bg-primary-100 text-primary-500 text-xs font-bold rounded-md hover:bg-primary-200 transition duration-1000 ease-in-out",
+        handleSelection: generateReport,
+        icon: 'fa-regular fa-file-lines'
+    }), [generateReport]);
+
     const hasCheckbox = false;
     const tableTitle = "Recent Orders";
     const statusColorMap = useMemo(() => ({
@@ -86,7 +99,8 @@ function DashboardRecentOrderTable({ tableData, pagination, currencySign }) {
         <>
             <TableProvider
                 value={{
-                    dropdownProps:dropdownProps,
+                    dropdownProps: dropdownProps,
+                    headerButton: false,
                     tableData: tableData,
                     pagination: pagination,
                     currencySign: currencySign,
