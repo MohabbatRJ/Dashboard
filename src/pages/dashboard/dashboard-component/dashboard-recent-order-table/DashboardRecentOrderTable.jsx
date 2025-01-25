@@ -4,7 +4,7 @@ import { memo, useCallback, useMemo, useState } from 'react';
 import { TableProvider } from '../TableContext';
 
 function DashboardRecentOrderTable({ tableData, pagination, currencySign }) {
-    const [recentOrderDropdownItems, setRecentOrderDropdownItems] = useState([
+    const [dropdownItems, setDropdownItems] = useState([
         { label: 'Today', value: 'Today', selected: true },
         { label: 'Yesterday', value: 'Yesterday', selected: false },
         { label: 'Last 7 Days', value: 'Last 7 Days', selected: false },
@@ -13,8 +13,8 @@ function DashboardRecentOrderTable({ tableData, pagination, currencySign }) {
         { label: 'Last Month', value: 'Last Month', selected: false },
     ]);
 
-    const handleRecentOrderDropdownSelection = useCallback((value) => {
-        setRecentOrderDropdownItems((prevItems) =>
+    const handleDropdownSelection = useCallback((value) => {
+        setDropdownItems((prevItems) =>
             prevItems.map((item) =>
                 item.value === value
                     ? { ...item, selected: true }
@@ -26,10 +26,10 @@ function DashboardRecentOrderTable({ tableData, pagination, currencySign }) {
         label: 'sort by',
         menuName: 'recentOrderDropdownMenu',
         position: "right-0 top-0",
-        items: recentOrderDropdownItems,
-        handleSelection: handleRecentOrderDropdownSelection,
+        items: dropdownItems,
+        handleSelection: handleDropdownSelection,
         arrow: true
-    }), [recentOrderDropdownItems, handleRecentOrderDropdownSelection]);
+    }), [dropdownItems, handleDropdownSelection]);
 
     const generateReport = useCallback(() => {
         console.log('generate')

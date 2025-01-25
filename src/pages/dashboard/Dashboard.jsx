@@ -18,6 +18,7 @@ import DashboardRecentOrderTable from './dashboard-component/dashboard-recent-or
 import { fetchRecentOrders } from '../../store/actions/recentOrdersAction/recentOrdersFetch/recentOrdersFetch';
 import DashboardStockReportTable from './dashboard-component/dashboard-stock-report-table/DashboardStockReportTable';
 import { fetchStockReport } from '../../store/actions/stockReportAction/stockReportFetch/stockReportFetch';
+import DashboardProductDeliveryTable from './dashboard-component/dashboard-product-delivery-table/DashboardProductDeliveryTable';
 
 function Dashboard() {
   const dispatch = useDispatch();
@@ -91,7 +92,7 @@ function Dashboard() {
     };
     if (recentOrders.length) fetchCurrency();
   }, [recentOrders]);
- 
+
   sessionStorage.clear();
   return (
     <>
@@ -117,6 +118,14 @@ function Dashboard() {
             </div>
             <div className="lg:col-span-2 grid lg:grid-cols-auto grid-rows-auto border border-gray-200 dark:border-gray-700 rounded-md">
               <DashboardStockReportTable tableData={stockReport} pagination={stockPagination} currencySign={currencySign} loading={isLoading} />
+            </div>
+
+            <div className="lg:col-span-2 grid lg:grid-cols-auto grid-rows-auto">
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-auto grid-rows-auto gap-4">
+                <div className="lg:col-span-1 grid lg:grid-cols-auto grid-rows-auto border border-gray-200 dark:border-gray-700 rounded-md">
+                  <DashboardProductDeliveryTable tableData={stockReport} pagination={stockPagination} currencySign={currencySign} loading={isLoading} />
+                  </div>
+              </div>
             </div>
           </div>
         </div>

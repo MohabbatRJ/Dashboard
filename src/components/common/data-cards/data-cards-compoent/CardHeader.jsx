@@ -1,10 +1,8 @@
 import DropdownNew from '../../dropdown/DropdownNew';
 import { useTableContext } from '../../../../pages/dashboard/dashboard-component/TableContext';
 import Button from '../../button/Button';
-// import { PDFDownloadLink } from '@react-pdf/renderer';
-// import PDFLayout from '../../../PDF/PDFLayout';
 
-function TableHeader() {
+function CardHeader() {
     const { tableTitle, dropdownProps, headerButton } = useTableContext();
     return (
         <>
@@ -23,22 +21,22 @@ function TableHeader() {
                             arrowIcon={dropdownProps.arrow}
                         />
                     }
-                    {
-                        headerButton.use === 'pdfDownload' &&
-                        // <PDFDownloadLink
-                        //     document={<PDFLayout data={tableData} />}
-                        //     fileName={`${headerButton.buttonName}.pdf`}
-                        // >
-
+                    {/* { */}
+                        {/* headerButton.use === 'pdfDownload' && */}
                             <Button type={headerButton.type} id={headerButton.buttonName} className={`${headerButton.css}`} buttonFunc={headerButton.handleSelection}>
                                 <i className={`${headerButton.icon} me-1`}></i> {headerButton.label}
                             </Button>
-                        // </PDFDownloadLink>
-                    }
+                    {/* } */}
+                    {/* {
+                        headerButton.use === 'link' &&
+                        <Button type={headerButton.type} id={headerButton.buttonName} className={`${headerButton.css}`} buttonFunc={headerButton.handleSelection}>
+                                {headerButton.label} <i className={`${headerButton.icon} me-1`}></i> 
+                        </Button>
+                    } */}
                 </div>
             </div>
         </>
     )
 }
 
-export default TableHeader
+export default CardHeader

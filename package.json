@@ -11,6 +11,7 @@
     "json-server": "json-server --watch db/db.json --port 5000"
   },
   "dependencies": {
+    "@react-pdf/renderer": "^4.1.6",
     "apexcharts": "^3.53.0",
     "axios": "^1.7.2",
     "clsx": "^2.1.1",

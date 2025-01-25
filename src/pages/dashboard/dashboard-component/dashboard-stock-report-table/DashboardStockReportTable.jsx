@@ -4,7 +4,7 @@ import { memo, useCallback, useMemo, useState } from 'react';
 import { TableProvider } from '../TableContext';
 
 function DashboardStockReportTable({ tableData, pagination, currencySign }) {
-    const [recentOrderDropdownItems, setRecentOrderDropdownItems] = useState([
+    const [dropdownItems, setDropdownItems] = useState([
         { label: 'Today', value: 'Today', selected: true },
         { label: 'Yesterday', value: 'Yesterday', selected: false },
         { label: 'Last 7 Days', value: 'Last 7 Days', selected: false },
@@ -13,8 +13,8 @@ function DashboardStockReportTable({ tableData, pagination, currencySign }) {
         { label: 'Last Month', value: 'Last Month', selected: false },
     ]);
 
-    const handleRecentOrderDropdownSelection = useCallback((value) => {
-        setRecentOrderDropdownItems((prevItems) =>
+    const handleDropdownSelection = useCallback((value) => {
+        setDropdownItems((prevItems) =>
             prevItems.map((item) =>
                 item.value === value
                     ? { ...item, selected: true }
@@ -28,20 +28,21 @@ function DashboardStockReportTable({ tableData, pagination, currencySign }) {
         label: 'sort by',
         menuName: 'recentOrderDropdownMenu',
         position: "right-0 top-0",
-        items: recentOrderDropdownItems,
-        handleSelection: handleRecentOrderDropdownSelection,
+        items: dropdownItems,
+        handleSelection: handleDropdownSelection,
         arrow: true
-    }), [recentOrderDropdownItems, handleRecentOrderDropdownSelection]);
+    }), [dropdownItems, handleDropdownSelection]);
     const generateReport = useCallback(() => {
         console.log('generate')
     }, [])
     const headerButton = useMemo(() => ({
         label: 'Generate Report',
-        buttonName: 'generateReport',
+        buttonName: 'StockReport',
         type: 'button',
         css: "py-2 px-6 bg-primary-100 text-primary-500 text-xs font-bold rounded-md hover:bg-primary-200 transition duration-1000 ease-in-out",
         handleSelection: generateReport,
-        icon: 'fa-regular fa-file-lines'
+        icon: 'fa-regular fa-file-lines',
+        use: 'pdfDownload'
     }), [generateReport]);
 
     const hasCheckbox = false;
