@@ -11,6 +11,9 @@ export default {
       },
       backgroundImage: {
         'react-bg-texture': "url('https://themesbrand.com/toner/html/assets/images/sidebar/body-light-1.png')",
+      },
+      transitionDuration: {
+        '600': '600ms',
       }
     },
   },

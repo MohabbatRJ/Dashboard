@@ -11,11 +11,13 @@ export const fetchFromApi = async (url, title, requestAction, successAction, fai
   try {
     const response = await axios.get(fullUrl);
     successAction(response.data);
+    // console.log('successAction(response.data);', successAction(response.data))
     // const { status, message } = response.data.meta;
     if (showNotificationFlag) {
       // showNotification("Success", message, status);
     }
   } catch (error) {
+    console.log('error',error)
     if (showNotificationFlag) {
       if (error.response) {
         // const { data } = error.response;
@@ -26,6 +28,6 @@ export const fetchFromApi = async (url, title, requestAction, successAction, fai
         // showNotification("Error", error.statusText, "danger");
       }
     }
-    // failureAction(error.message);
+    failureAction(error.message);
   }
 };

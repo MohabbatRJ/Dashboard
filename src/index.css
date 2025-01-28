@@ -86,4 +86,7 @@
   .red-dot-circle {
     @apply absolute min-w-[10px] min-h-[10px] rounded-full py-1 px-1 text-xs font-medium content-[''] leading-none grid place-items-center translate-x-2/4 -translate-y-2/4 bg-red-500 text-white;
   }
+  .menuActive{
+    @apply bg-primary-700;
+  }
 }

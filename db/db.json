@@ -13,13 +13,13 @@
       "title": "Product",
       "icon": "box",
       "dropdownIcon": "angle-down",
-      "url": "",
+      "url": "/products",
       "children": [
         {
           "id": 201,
           "title": "Physical",
           "menuName": "physicalProducts",
-          "url": "/users/list",
+          "url": "/products/physical",
           "icon": "people-carry-box",
           "dropdownIcon": "angle-down",
           "children": [
@@ -27,19 +27,19 @@
               "id": 202,
               "title": "All Product",
               "icon": "list",
-              "url": ""
+              "url": "/physical/products/all-products"
             },
             {
               "id": 203,
               "title": "Create Products",
               "icon": "plus",
-              "url": ""
+              "url": "/physical/products/create"
             },
             {
               "id": 204,
               "title": "Product Detail",
               "icon": "info-circle",
-              "url": ""
+              "url": "/physical/products/detail"
             }
           ]
         },
@@ -49,25 +49,25 @@
           "title": "Digital",
           "icon": "box-open",
           "dropdownIcon": "angle-down",
-          "url": "",
+          "url": "/products/digital",
           "children": [
             {
               "id": 206,
               "title": "All Product",
               "icon": "list",
-              "url": ""
+              "url": "/digital/products/all-products"
             },
             {
               "id": 207,
               "title": "Create Products",
               "icon": "plus",
-              "url": ""
+              "url": "/digital/products/create"
             },
             {
               "id": 208,
               "title": "Product Detail",
               "icon": "info-circle",
-              "url": ""
+              "url": "/digital/products/detail"
             }
           ]
         },
@@ -76,7 +76,7 @@
           "menuName": "productReview",
           "title": "Product Reviews",
           "icon": "star",
-          "url": ""
+          "url": "/products/reviews"
         }
       ]
     },
@@ -86,25 +86,25 @@
       "title": "Category",
       "icon": "tags",
       "dropdownIcon": "angle-down",
-      "url": "/settings",
+      "url": "/category",
       "children": [
         {
           "id": 301,
           "title": "All Category",
           "icon": "list",
-          "url": ""
+          "url": "/category/all"
         },
         {
           "id": 302,
           "title": "Create Main Category",
           "icon": "plus",
-          "url": ""
+          "url": "/category/create-main"
         },
         {
           "id": 303,
           "title": "Create Sub Category",
           "icon": "circle-plus",
-          "url": ""
+          "url": "/category/create-sub"
         }
       ]
     },
@@ -114,37 +114,37 @@
       "title": "Orders",
       "icon": "shopping-cart",
       "dropdownIcon": "angle-down",
-      "url": "/",
+      "url": "/orders",
       "children": [
         {
           "id": 401,
           "title": "All Orders",
           "icon": "list",
-          "url": ""
+          "url": "/orders/all"
         },
         {
           "id": 402,
           "title": "Order Tracking",
           "icon": "route",
-          "url": ""
+          "url": "/orders/tracking"
         },
         {
           "id": 403,
           "title": "Order Detail",
           "icon": "info-circle",
-          "url": ""
+          "url": "/orders/detail"
         },
         {
           "id": 404,
           "title": "Create New Order",
           "icon": "plus",
-          "url": ""
+          "url": "/orders/create"
         },
         {
           "id": 405,
           "title": "Invoice",
           "icon": "file-invoice",
-          "url": ""
+          "url": "/orders/invoice"
         }
       ]
     },
@@ -154,19 +154,19 @@
       "title": "Sales",
       "icon": "chart-line",
       "dropdownIcon": "angle-down",
-      "url": "/",
+      "url": "/sales",
       "children": [
         {
           "id": 501,
           "title": "Orders",
           "icon": "shopping-cart",
-          "url": "/"
+          "url": "/sales/orders"
         },
         {
           "id": 502,
           "title": "Transactions",
           "icon": "dollar-sign",
-          "url": "/"
+          "url": "/sales/transactions"
         }
       ]
     },
@@ -176,19 +176,19 @@
       "title": "Coupons",
       "icon": "ticket-alt",
       "dropdownIcon": "angle-down",
-      "url": "/",
+      "url": "/coupons",
       "children": [
         {
           "id": 601,
           "title": "All Coupons",
           "icon": "list",
-          "url": "/"
+          "url": "/coupons/all"
         },
         {
           "id": 602,
           "title": "Create New Coupons",
           "icon": "plus",
-          "url": "/"
+          "url": "/coupons/create"
         }
       ]
     },
@@ -198,25 +198,25 @@
       "title": "Invoice",
       "icon": "file-invoice",
       "dropdownIcon": "angle-down",
-      "url": "/",
+      "url": "/invoice",
       "children": [
         {
           "id": 701,
           "title": "All Invoices",
           "icon": "list",
-          "url": "/"
+          "url": "/invoice/all"
         },
         {
           "id": 702,
           "title": "Overview",
           "icon": "eye",
-          "url": "/"
+          "url": "/invoice/overview"
         },
         {
           "id": 703,
           "title": "Create New Invoice",
           "icon": "plus",
-          "url": "/"
+          "url": "/invoice/create"
         }
       ]
     },
@@ -226,19 +226,19 @@
       "title": "User",
       "icon": "users",
       "dropdownIcon": "angle-down",
-      "url": "/",
+      "url": "/user",
       "children": [
         {
           "id": 801,
           "title": "All User",
           "icon": "list",
-          "url": "/"
+          "url": "/user/all"
         },
         {
           "id": 802,
           "title": "Create New User",
           "icon": "plus",
-          "url": "/"
+          "url": "/user/create"
         }
       ]
     },
@@ -248,19 +248,19 @@
       "title": "Customer",
       "icon": "user",
       "dropdownIcon": "angle-down",
-      "url": "/",
+      "url": "/customer",
       "children": [
         {
           "id": 901,
           "title": "All Customers",
           "icon": "list",
-          "url": "/"
+          "url": "/customer/all"
         },
         {
           "id": 902,
           "title": "Create New Customer",
           "icon": "plus",
-          "url": "/"
+          "url": "/customer/create"
         }
       ]
     },
@@ -270,19 +270,19 @@
       "title": "Vendor",
       "icon": "user-tie",
       "dropdownIcon": "angle-down",
-      "url": "/",
+      "url": "/vendor",
       "children": [
         {
           "id": 1001,
           "title": "All Vendors",
           "icon": "list",
-          "url": "/"
+          "url": "/vendor/all"
         },
         {
           "id": 1002,
           "title": "Create New Vendor",
           "icon": "plus",
-          "url": "/"
+          "url": "/vendor/create"
         }
       ]
     },
@@ -292,25 +292,25 @@
       "title": "Localization",
       "icon": "globe",
       "dropdownIcon": "angle-down",
-      "url": "/",
+      "url": "/localization",
       "children": [
         {
           "id": 1101,
           "title": "Translations",
           "icon": "language",
-          "url": "/"
+          "url": "/localization/translations"
         },
         {
           "id": 1102,
           "title": "Currency Rates",
           "icon": "money-bill",
-          "url": "/"
+          "url": "/localization/currency"
         },
         {
           "id": 1103,
           "title": "Taxes",
           "icon": "percent",
-          "url": "/"
+          "url": "/localization/taxes"
         }
       ]
     },
@@ -320,37 +320,37 @@
       "title": "Accounts",
       "icon": "user-cog",
       "dropdownIcon": "angle-down",
-      "url": "/",
+      "url": "/accounts",
       "children": [
         {
           "id": 1201,
           "title": "My Account",
           "icon": "user",
-          "url": "/"
+          "url": "/accounts/my-account"
         },
         {
           "id": 1202,
           "title": "Password Reset",
           "icon": "key",
-          "url": "/"
+          "url": "/accounts/password-reset"
         },
         {
           "id": 1203,
           "title": "Two Step Verify",
           "icon": "lock",
-          "url": "/"
+          "url": "/accounts/verify"
         },
         {
           "id": 1204,
           "title": "Forgot Password",
-          "icon": "envelope",
-          "url": "/"
+          "icon": "user-lock",
+          "url": "/accounts/forgot-password"
         },
         {
           "id": 1205,
           "title": "Logout",
           "icon": "sign-out-alt",
-          "url": "/"
+          "url": "/logout"
         }
       ]
     },
@@ -360,19 +360,19 @@
       "title": "Shipment",
       "icon": "truck",
       "dropdownIcon": "angle-down",
-      "url": "/",
+      "url": "/shipment",
       "children": [
         {
           "id": 1301,
           "title": "All Shipment",
           "icon": "list",
-          "url": "/"
+          "url": "/shipment/all"
         },
         {
           "id": 1302,
           "title": "Create New Shipment",
           "icon": "plus",
-          "url": "/"
+          "url": "/shipment/create"
         }
       ]
     },
@@ -381,42 +381,42 @@
       "menuName": "chat",
       "title": "Chat",
       "icon": "comments",
-      "url": "/"
+      "url": "/chat"
     },
     {
       "id": "1500",
       "menuName": "statistics",
       "title": "Statistics",
       "icon": "chart-bar",
-      "url": "/"
+      "url": "/statistics"
     },
     {
       "id": "1600",
       "menuName": "reviewRating",
       "title": "Review & Rating",
       "icon": "star",
-      "url": "/"
+      "url": "/review-rating"
     },
     {
       "id": "1700",
       "menuName": "supportTicket",
       "title": "Support Ticket",
       "icon": "ticket-alt",
-      "url": "/"
+      "url": "/support-ticket"
     },
     {
       "id": "1800",
       "menuName": "reports",
       "title": "Reports",
       "icon": "file-alt",
-      "url": "/"
+      "url": "/reports"
     },
     {
       "id": "1900",
       "menuName": "calendar",
       "title": "Calendar",
       "icon": "calendar",
-      "url": "/"
+      "url": "/calendar"
     }
   ],
   "dashboardMetrics": {
